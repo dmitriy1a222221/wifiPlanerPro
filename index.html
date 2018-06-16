@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <script src="./js/main.js" defer>
+    </script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <header class="header">
+                <h1>---------------Wi-Fi Pro Planer---------------</h1>
+            </header>
+            <main class="main">
+                <canvas id="myCanvas" width="600" height="500" style="border:1px solid #d3d3d3;">
+                    Your browser does not support the HTML5 canvas tag.
+                </canvas>
+                <div class="wrapp-config-elem">
+                    <select id="selectElement" onchange="sel()">
+                        <option >Plan 1</option>
+                        <option >Plan 2</option>
+                        <option >Plan 3</option>
+                    </select>
+
+                    <div class="wrapper-option">
+                        <div class="point-access">
+                            <label>
+                                <input type="checkbox" id="point_access_1" onchange="pA()">
+                                PointAccess - 1
+                            </label>
+                            <label>
+                                <input type="checkbox" id="point_access_2" onchange="pA2()">
+                                PointAccess - 2
+                            </label>
+                            <label>
+                                <input type="checkbox" id="point_access_3" onchange="pA3()">
+                                PointAccess - 3
+                            </label>
+                        </div>
+
+                        <div class="power-wifi">
+                            <select name="" id="selPowerWifi_1" onchange="selPow()">
+                                <option value="">50</option>
+                                <option value="">75</option>
+                                <option value="">100</option>
+                            </select>
+                            <select name="" id="selPowerWifi_2" onchange="selPow2()">
+                                <option value="">50</option>
+                                <option value="">75</option>
+                                <option value="">100</option>
+                            </select>
+                            <select name="" id="selPowerWifi_3" onchange="selPow3()">
+                                <option value="">50</option>
+                                <option value="">75</option>
+                                <option value="">100</option>
+                            </select>
+                        </div>
+
+                        <div class="cordinats">
+                            <div class="box">
+                                <span>X:</span>
+                                <input type="number" id="cordinX2" value="400" onchange="chang()">
+                                <span>Y:</span>
+                                <input type="number" id="cordinY2" value="150" onchange="chang()">
+                            </div>
+
+                            <div class="box1">
+                                <span>X:</span>
+                                <input type="number" id="cordinX3" value="100" onchange="chang1()">
+                                <span>Y:</span>
+                                <input type="number" id="cordinY3" value="400" onchange="chang1()">
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <!--<button onclick="update()" class="btn">START</button>-->
+
+                </div>
+
+            </main>
+        </div>
+        <footer class="footer">
+        <div class="wrapper_footer-element">
+            <p>Copyright 2018. Studio DmitriKas.<br> All Rights Reserved.</p>
+            <div class="iconsBlock">
+                <a href="https://www.facebook.com/"><img src="./images/facebook.svg" width="30" height="30"></a>
+                <a href="https://www.linkedin.com/feed/"><img src="./images/linkedin.svg" width="30" height="30"></a>
+            </div>
+        </div>
+    </footer>
+    </div>
+<!--<i size="30px" class="fab fa-facebook"></i>-->
+<!--    <i class="fab fa-linkedin"></i>-->
+</body>
+</html>
